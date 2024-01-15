@@ -6,49 +6,7 @@
     <title>Consertos Eletrônicos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <style>
-        /* Estilos personalizados para adicionar cor */
-        body {
-            background-color: #f8f9fa; /* Fundo cinza claro */
-            color: #343a40; /* Cor do texto escuro */
-        }
-
-        .navbar {
-            background-color: #343a40; /* Fundo escuro para a barra de navegação */
-        }
-
-        h1 {
-            color: #007bff; /* Cor azul para o título */
-        }
-
-        p {
-            color: #6c757d; /* Cor cinza para os parágrafos */
-        }
-
-        .address {
-            font-size: 18px;
-            font-weight: bold;
-            color: #007bff;
-            margin-top: 20px;
-        }
-
-        .map-container {
-            margin-top: 20px;
-            position: relative;
-            overflow: hidden;
-            padding-bottom: 56.25%;
-            padding-top: 25px;
-            height: 0;
-        }
-
-        .map-container iframe {
-            left: 0;
-            top: 0;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
 </head>
 <body>
 
@@ -74,10 +32,10 @@
                 <p>Segunda a sexta das 9h às 18h30</p>
                 <p>Sábados das 9h às 14h</p>
                 <p class="address">Rua Caraipes das Águas 496</p>
+                <p class="address">Tel: 11 98766-4058</p>
                 <div class="map-container">
-                    <!-- Adicione aqui um mapa incorporado do Google Maps ou de outra fonte -->
-                    <!-- Substitua o link abaixo pelo código de incorporação do mapa -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1234.5678901234567!2d-46.12345678901234!3d-23.456789012345678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDU0JzA5LjMiUyA0NsKwMzYnMzQuNSJX!5e0!3m2!1sen!2sca!4v1606322128841!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+ 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6489931169235!2d-46.43158098444625!3d-23.531482984689628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce56b4a35b35f3%3A0x99d1128f85c1933A!2sRua%20Caraipes%20das%20%C3%81guas%2C%20496%20-%20Cidade%20L%C3%ADder%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008161-360!5e0!3m2!1sen!2sca!4v1606322128841!5m2!1sen!2sca" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
             </div>
         </div>
